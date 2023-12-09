@@ -1,7 +1,7 @@
 import java.util.*;
- class roman {
+class h14 {
 
-    public static int romanToInt(String s) {
+    public static int r(String s) {
 
         Map<Character, Integer> romanMap = new HashMap<>();
         romanMap.put('I', 1);
@@ -23,9 +23,9 @@ import java.util.*;
         return num;
     }
     public static void main(String args[]){
-        Scanner lol=new Scanner(System.in);
+        Scanner l=new Scanner(System.in);
         System.out.println("Enter a Roman number :");
-        String str=lol.nextLine().toUpperCase();
+        String str=l.nextLine().toUpperCase();
         int flag=1;
         for(int i=0;i<str.length();i++){
             if(str.charAt(i)=='I' || str.charAt(i)=='X' || str.charAt(i)=='V'|| str.charAt(i)=='C' || str.charAt(i)=='D' || str.charAt(i)=='L' || str.charAt(i)=='M'  )
@@ -38,7 +38,7 @@ import java.util.*;
             }
         }
         if(flag==0){
-            System.out.println(romanToInt(str));
+            System.out.println(r(str));
         }
         else{
             System.out.println("Invalid Input...");
